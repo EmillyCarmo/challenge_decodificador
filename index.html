@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="Ie-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de texto</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <img class="logo" src="./assets/logo_alura.png" alt="Logo da Alura">
+    </header>
+
+
+<main class="main">
+    <section class="section_one">
+            <textarea class="text-area" cols="30" row="25" placeholder="Digite seu texto"></textarea>
+            <div class="informacao">
+                <img class="exclamacao" src="assets/exclamacao.png" alt="Ponto de exclamação">
+                <h6 class="informacao__texto">Apenas letras minúsculas e sem acento.</h6>
+            </div>
+            <div class="botoes">
+                <button class="btn-encriptar" id="encriptando" onclick="btnEncriptar()">Criptografar</button>
+                
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Descriptografar</button>
+            </div>
+    </section>
+
+    <section class="section_two">
+
+            <textarea class="mensagem" id="mensagem" cols="18" rows="10"></textarea>
+            <div class="tool__tip">
+            <button class="btn-copiar" id="copiar" onclick="btnCopiar()" > 
+                <img class="copy_img" src="assets/copy.png">
+                <span class="tool__tip__text" id="Tooltip">copiar</span>
+        
+            </button>
+        </div>
+
+            
+            <div class="mensagem__placeholder" id="placeholder">
+                
+                <image class="bg-image" id="bg-image" src="./assets/boneco.jpg" alt="Menino segurando uma lupa"></bg-image>
+                     
+                    <h2 class="mensagem__h2">Nenhuma mensagem encontrada</h2>
+                    <p class="mensagem__p">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                    
+            </div> 
+           
+    </section>
+</main>
+
+<footer class="rodape">
+    <div class="icon__link">Desenvolvido por Emilly</div>
+    |
+    <div  class="icon__link"><a  class="icon__link" href="https://icons8.com/icon/pNYOTp5DinZ3/copy">Copy</a> icon by <a class="icon__link" target="_blank" href="https://icons8.com">Icons8</a></div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
