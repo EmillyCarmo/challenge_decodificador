@@ -49,6 +49,7 @@ function btnDesencriptar() {
           placeholder.style.display = 'none';
       }
       
+      
     var copiar = document.getElementById('copiar');
       if (copiar.style.display === 'block') {
           copiar.style.display = 'hidden';
@@ -78,6 +79,7 @@ function btnCopiar() {
     var copyText = document.getElementById("mensagem");
     copyText.setSelectionRange(0, 99999);
     navigator.clipboard.writeText(copyText.value);
+
 
     var tooltip = document.getElementById("Tooltip");
     tooltip.innerHTML = "Copiado";
