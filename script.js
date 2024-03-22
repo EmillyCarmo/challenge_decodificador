@@ -107,8 +107,8 @@ function caracteresEspeciais(){
 
   if(!regex.test(texto)) {
       texto = alert("Apenas letras minúsculas e sem acento!");
-        return false;
-  } else {
         return true;
+  } else {
+        return false;
   }
 }
